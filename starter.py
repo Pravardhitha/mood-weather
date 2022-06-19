@@ -3,17 +3,22 @@ import streamlit as st
 st.write("# Mood-Weather")
 st.write("### Experience the weather of your mood!")
 with st.form(key="mood_form"):
+    st.markdown(":cherry_blossom:")
     happy = st.select_slider("How happy are you today?", options=[1,2,3,4,5])
     #st.write(happy)
 
+    st.markdown(":umbrella:")
     sad = st.select_slider("How sad are you today?", options=[1,2,3,4,5])
+   
     #st.write(sad)
-
-    calm = st.select_slider("How calm are you today?", options=[1,2,3,4,5])
+    st.markdown(":baby_chick:")
+    calm = st.select_slider("How calm are you today? ", options=[1,2,3,4,5])
+    
     #st.write(calm)
-
+    st.markdown(":sun_with_face:")
     energetic = st.select_slider("How energetic are you today?", options=[1,2,3,4,5])
     #st.write(energetic)
+    
 
     submit_button = st.form_submit_button(label="Submit")
 
